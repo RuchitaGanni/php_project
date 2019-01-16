@@ -1,0 +1,59 @@
+<!-- http://localhost/loginform.html -->
+
+
+
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+<title>
+Login page
+</title>
+<style type="text/css">
+	#formback{
+		margin-left: 501px;
+		width: 25%;
+		/*background-color:lightgrey;*/
+		position: relative;
+	    position: center;
+	}
+	#form{
+		width:200px;
+		margin:auto;
+	}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; background-color: lightgrey;">
+		
+User Login Page
+</h1>
+<div id="formback">
+<form  method="POST" action="check.php" name="login" id="form" >
+<label>Username</label><br><input type="text" name="name" id="name1"/><br>
+<label>Password</label><br><input type="password" name="password" id="password1"/><br>
+<input type="submit"  value="Login"/>
+<button type="reset" value="Cancel">Cancel</button>
+</form>
+</div>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+<!-- <script >
+	/*function to check userid & password*/
+onclick="check(this.form)"
+function check(form)
+{
+ 
+ if(form.userid.value == "myuserid" && form.password.value == "mypassword")
+  {
+    open("http://localhost/showdata_html.php")/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script> -->
+</body>
+</html>
