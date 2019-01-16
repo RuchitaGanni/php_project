@@ -1,6 +1,8 @@
 <?php include("establish.php") ;
 // if(isset($_POST['id'])){
 
+//'comment'
+
 $id1=$_POST['id'];
 // }
 //  $name1=$_REQUEST['name'];
